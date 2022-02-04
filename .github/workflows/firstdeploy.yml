@@ -30,7 +30,7 @@ jobs:
         with:
             node-version:12
       - name: Install Surge
-        uses: npm install -g surge
+        run: npm install -g surge
         
       - name: Run Surge
-        uses: surge ./ FirstappPositron.surge.sh --token ${{secrets.FIRST_APP}}
+        run: surge ./ FirstappPositron.surge.sh --token ${{secrets.FIRST_APP}}

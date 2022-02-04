@@ -33,4 +33,4 @@ jobs:
         uses: npm install -g surge
         
       - name: Run Surge
-        uses: surge ./ FirstappPositron.surge.sh --token ${{secret.FIRST_APP}}
+        uses: surge ./ FirstappPositron.surge.sh --token ${{secrets.FIRST_APP}}
